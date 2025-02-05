@@ -1,4 +1,4 @@
-const API_KEY = "cb21829b381fb69583d6cfb9d9d685ce"; // OpenWeatherMap API key for weather
+const API_KEY = "cb21829b381fb69583d6cfb9d9d685ce";
 
 document.addEventListener("DOMContentLoaded", () => {
     const savedCity = localStorage.getItem("lastCity");
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// Detect "Enter" key press in input field
+
 document.getElementById("cityInput").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         getWeather();
@@ -33,17 +33,17 @@ function getWeather(city = null) {
                 return;
             }
 
-            localStorage.setItem("lastCity", cityName); // Save last searched city
+            localStorage.setItem("lastCity", cityName); 
 
             document.getElementById("cityName").innerText = `${data.name}, ${data.sys.country}`;
             document.getElementById("temperature").innerText = `${data.main.temp}°C`;
-            document.getElementById("feelsLike").innerText = `Feels Like: ${data.main.feels_like}°C`; // Display feels like
+            document.getElementById("feelsLike").innerText = `Feels Like: ${data.main.feels_like}°C`; 
             document.getElementById("weatherCondition").innerText = data.weather[0].description;
 
             const date = new Date();
             document.getElementById("dateTime").innerText = `Local Time: ${date.toLocaleTimeString()}`;
 
-            // Change background based on weather
+            
             changeBackground(data.weather[0].main);
         })
         .catch(error => console.error("Error fetching weather:", error));
@@ -52,7 +52,7 @@ function getWeather(city = null) {
 function changeBackground(weatherCondition) {
     let gifUrl;
     
-    // Choose a background GIF based on weather condition
+   
     switch (weatherCondition) {
         case "Clear":
             gifUrl = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGdlb2o1em85a2U2Nmg3eGx1aTZ0eXk4MTRvd2gyaDlrY2ttajZoeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0Styincf6K2tvfjb5Q/giphy.gif"; // Clear sky GIF
@@ -73,8 +73,11 @@ function changeBackground(weatherCondition) {
             gifUrl = "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2l1Y3FpM2YzaHFqM2F5bGx6Znd1NWRtZGt5djkydGVxc3c4MWV1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rp0CyaUEquZ5qmO92s/giphy.gif"; // Default GIF
             break;
     }
+   document.body.style.background = `url(${gifUrl}) no-repeat center center fixed`;
+    document.body.style.backgroundSize = "cover"; 
+}
 
-    // Set the background GIF
+   
     document.body.style.background = `url(${gifUrl}) no-repeat center center fixed`;
     document.body.style.backgroundSize = "cover"; // Ensure the GIF covers the entire background
 }
