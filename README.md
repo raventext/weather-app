@@ -2,12 +2,11 @@
 
 # 🌦 Weather App  
 
-A simple and responsive **Weather App** that fetches real-time weather data using the **OpenWeatherMap API**. The app dynamically updates the background with weather-specific GIFs, supports "Enter" key search, and remembers the last searched city.  
+A simple and responsive **Weather App** that fetches real-time weather data using the **OpenWeatherMap API**. The app dynamically updates the background with weather-specific GIF and remembers the last searched city.  
 
 ## 🚀 Features  
 
-✅ **Search Weather by City Name**  
-✅ **"Enter" Key Support for Quick Search**  
+✅ **Search Weather by City Name**    
 ✅ **Fetch and Display Current Weather** (Temperature, Condition, Feels Like, etc.)  
 ✅ **Local Time Display**  
 ✅ **Weather-Based GIF Background** 🌤️ 🌧️ ⛈️ ❄️  
