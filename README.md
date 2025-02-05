@@ -1,6 +1,4 @@
-Here’s a well-structured **README.md** file for your **Weather App** project on GitHub:  
 
----
 
 # 🌦 Weather App  
 
@@ -40,7 +38,7 @@ cd weather-app
   ```
 
 ## 📌 Live Demo  
-🔗 **[Check it Out!](https://YOUR-USERNAME.github.io/weather-app/)**  
+🔗 **[Check it Out!](https://raventext.github.io/weather-app/)**  
 
 ## 🛠️ Technologies Used  
 - **HTML** – Structure  
