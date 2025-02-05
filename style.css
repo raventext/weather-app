@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure body takes full height */
+    overflow: hidden; /* Prevents any overflow outside the body */
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for more emphasis */
+    position: relative; /* Ensures shadow only applies to the container */
+    z-index: 1; /* Keeps content above the background GIF */
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7); /* Adds some contrast for input field */
+    color: black;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #ff9800;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #e68900;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+h1, h2, h3, p {
+    color: white; /* Ensure text color is clear against background */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional text shadow for better readability */
+}
+
+#cityName, #dateTime, #temperature, #weatherCondition, #feelsLike {
+    font-size: 18px;
+    margin: 5px 0;
+}
