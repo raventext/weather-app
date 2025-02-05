@@ -16,7 +16,8 @@ A simple and responsive **Weather App** that fetches real-time weather data usin
 ✅ **Last Searched City is Saved in Local Storage**  
 
 ## 🎨 UI Preview  
- 
+ ![image](https://github.com/user-attachments/assets/667265de-d316-470f-9ea6-1d69aefee0d1)
+
 
 ## 🔧 Installation & Setup  
 
