@@ -78,6 +78,4 @@ function changeBackground(weatherCondition) {
 }
 
    
-    document.body.style.background = `url(${gifUrl}) no-repeat center center fixed`;
-    document.body.style.backgroundSize = "cover"; // Ensure the GIF covers the entire background
-}
+  
